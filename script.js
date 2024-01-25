@@ -12,5 +12,7 @@ function run(){
     ("output");
 
     output.contentDocument.body.innerHTML =
-    htmlCode.value;
+    htmlCode.value + "<style>" + cssCode.value + "</style>";
+
+    output.contentWindow.eval(jsCode.value)
 }
