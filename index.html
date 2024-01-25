@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevForge</title>
+    <link rel="stylesheet" href="prism/prism.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
     <!--NavBar-->
-    
+
     
 <section class="container">
     <h1>Code Editor 💻 </h1>
     <div class="editor">
         <div class="left">
           <label> <i class='bx bxl-html5'></i>HTML</label>
-          <textarea onkeyup="run()"
-          spellcheck="false" 
+          <textarea
+          onkeyup="run()" 
           id="html-code"></textarea>
 
           <label><i class='bx bxl-css3' ></i>CSS</label>
-          <textarea onkeyup="run()"
-          spellcheck="false"
+          <textarea 
+          onkeyup="run()"
           id="css-code"></textarea>
 
           <label><i class='bx bxl-javascript' ></i>JavaScript</label>
-          <textarea onkeyup="run()"
-          spellcheck="false"
+          <textarea 
+          onkeyup="run()"
           id="js-code"></textarea>
 
         </div>
@@ -41,7 +42,7 @@
     </div>
 </section>
 
-
+<script src="prism/prism.js"></script>
 <script src="script.js"></script>
 
 </body>
